@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.backGround{
+    width: 100%;
+    height: 100vh;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+
+.calculator{
+    width: 450px;
+    height: 510px;
+    border-radius: 20px;
+    background-color: rgb(12, 12, 12);
+    padding: 15px;
+}
+
+.display{
+    width: 100%;
+    height: 80px;
+    border-radius: 5px;
+    border: none;
+    background-color: #041;
+    color: white;
+}
+
+.buttons{
+    display: flex;
+    width: 100%;
+}
+
+.row{
+    display: block;
+}
+
+.numeros{
+    width: 60%;
+}
+
+.actionBox{
+    display: block;
+    width: 20%;
+    margin-left: 25px;
+}
+
+.BtnNum{
+    width: 32%;
+    height: 80px;
+    border-radius: 20px;
+    margin-top: 15px;
+    border: none;
+    background-color: blue;
+    color: white;
+}
+
+.BtnNumZero{
+    width: 100%;
+    height: 80px;
+    border-radius: 20px;
+    margin-top: 15px;
+    border: none;
+    background-color: blue;
+    color: white;
+}
+
+.BtnNumClear{
+    width: 100%;
+    height: 80px;
+    border-radius: 20px;
+    margin-top: 15px;
+    border: none;
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+.BtnNumAct{
+    width: 100%;
+    height: 45px;
+    border-radius: 20px;
+    margin-top: 15px;
+    border: none;
+    background-color: rgb(255, 123, 0);
+    color: white;
+}

@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Calculadora </title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <div class="backGround">
+      <div class="calculator">
+        <input type="text" class="display" disabled />
+        <!-- COINTAINER DOS BOTÕES NUMERICOS -->
+        <div class="buttons">
+            <div class="numeros">
+                
+                <div class="row">
+                <button class="BtnNum" onclick="appendNumber('1')">1</button>
+                <button class="BtnNum" onclick="appendNumber('2')">2</button>
+                <button class="BtnNum" onclick="appendNumber('3')">3</button>
+                </div>
+                <div class="row">
+                    <button class="BtnNum" onclick="appendNumber('4')">4</button>
+                    <button class="BtnNum" onclick="appendNumber('5')">5</button>
+                    <button class="BtnNum" onclick="appendNumber('6')">6</button>    
+                </div>
+    
+                <div class="row">
+                    <button class="BtnNum" onclick="appendNumber('7')">7</button>
+                    <button class="BtnNum" onclick="appendNumber('8')">8</button>
+                    <button class="BtnNum" onclick="appendNumber('9')">9</button>  
+                <div class="row">
+                    <button class="BtnNumZero" onclick="appendNumber('0')">0</button>
+                </div>    
+            </div>
+
+            
+            </div>
+
+            <!-- COINTAINER DOS BOTÕES DE AÇÃO -->
+            <div class="actionBox">
+                <button class="BtnNumClear" onclick="clearDisplay()">C</button>
+                <button class="BtnNumAct" onclick="chooseOperation('+')">+</button>
+                <button class="BtnNumAct" onclick="chooseOperation('-')">-</button>
+                <button class="BtnNumAct" onclick="chooseOperation('*')">x</button>
+                <button class="BtnNumAct" onclick="chooseOperation('/')">/</button>
+                <button class="BtnNumAct" onclick="calculate('=')">=</button>
+            </div>
+            <!-- Adicione os demais números aqui -->
+            <!-- Adicione as demais operações aqui -->
+            
+        </div>
+      </div>
+    </div>
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
